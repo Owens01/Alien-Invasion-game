@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alien Invasion</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="welcomeScreen">
+      <h1>Alien Invasion</h1>
+      <p>Designed by <span class="dev-name">Owen</span></p>
+      <p>
+        Control your spaceship to destroy aliens before they reach the ground!
+      </p>
+      <button id="startButton">Start Game</button>
+    </div>
+
+    <div id="gameContainer">
+      <div id="score">Score: 0</div>
+      <div id="level">Level: 1</div>
+      <canvas id="gameCanvas"></canvas>
+
+       <!-- Mobile Controls -->
+        <div id="mobileControls">
+            <button id="leftButton" class="controlButton">←</button>
+            <button id="shootButton" class="controlButton">Shoot</button>
+            <button id="rightButton" class="controlButton">→</button>
+        </div>
+    </div>
+
+    <div id="gameOverScreen">
+      <h1>Game Over</h1>
+      <button id="restartButton">Play Again</button>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="shootSound" src="./sounds/shoot.mp3.wav"></audio>
+    <audio id="gameOverSound" src="./sounds/game-over.mp3.wav"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
